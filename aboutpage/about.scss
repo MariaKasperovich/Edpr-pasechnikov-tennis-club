@@ -1,0 +1,242 @@
+// Ссылка на макет: https://www.figma.com/file/3zAjQaNfeJHBVMjZOP4mrg/Templates-%2325.-More-on-d-e-n.info-(Copy)?node-id=327%3A113&t=wFsoKWkZiWKZ8X7W-0
+
+@import url(../styles/resetstyles.css);
+@import url(../fonts/stylesheet.css);
+// @import url(variables.scss);
+
+$main-light-color: #FFFFFF;
+$main-dark-color: #333333;
+$main-items-color: #8D86C9;
+$main-border-color: #F7ECE1;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Gilroy;
+    color: $main-dark-color;
+}
+
+
+/* -Block--------------------------------------------------------------------------------------- */
+
+
+.block-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+._container {
+    max-width: 1296px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+._top-bg-image {
+    background-image: url(../images/about/bgabout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+
+/* Header ------------------------------------------------------------------------------------- */
+
+
+.header {}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 124px;
+}
+
+.header__logo {}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu {}
+
+.menu-item {
+    list-style-type: none;
+    padding: 0 20px;
+
+    a {
+        text-decoration: none;
+
+        font-size: 14px;
+        line-height: 140%;
+        color: $main-light-color;
+    }
+}
+
+.header__icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.header__icon {
+    padding: 0 10px;
+}
+
+
+/* Page ------------------------------------------------------------------------------------- */
+
+.page {
+    flex: 1 1 auto;
+}
+
+.page__main-block {}
+
+.page__news {}
+
+
+/* Main block ------------------------------------------------------------------------------------- */
+
+
+.main-block {}
+
+.main-block__container {}
+
+.main-block__header {
+    h1 {
+        padding: 60px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: $main-light-color;
+    }
+
+    &::before {
+        content: " ";
+        display: block;
+        height: 1px;
+        border-top: 1px solid $main-light-color;
+        opacity: 30%;
+    }
+}
+
+
+.footer {
+    background-color: #F7ECE1;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 96px;
+}
+
+.footer__copyright {
+    opacity: 0.3;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .menu-item a {
+        color: $main-dark-color;
+        font-weight: 500;
+    }
+}
+
+
+.footer__icon {
+    padding: 0 10px;
+}
+
+
+
+
+.page {}
+
+.page__about {}
+
+.about {}
+
+.about__container {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.about__body {}
+
+.about__header {
+    margin-bottom: 60px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+.about__image {
+    padding: 25px 20px;
+    height: 500px;
+    border: 1px solid #F7ECE1;
+}
+
+.about__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.about__button {
+    position: absolute;
+    left: 70px;
+    bottom: 65px;
+
+
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #8D86C9;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: $main-light-color;
+}
+
+
+// -----------------------------------
+
+.about__image2 {
+    max-height: 500px;
+    padding: 25px 20px;
+    border: 1px solid #F7ECE1;
+}
+
+.about__image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

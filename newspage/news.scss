@@ -1,0 +1,245 @@
+// Ссылка на макет: https://www.figma.com/file/3zAjQaNfeJHBVMjZOP4mrg/Templates-%2325.-More-on-d-e-n.info-(Copy)?node-id=327%3A113&t=wFsoKWkZiWKZ8X7W-0
+
+@import url(../styles/resetstyles.css);
+@import url(../fonts/stylesheet.css);
+// @import url(variables.scss);
+
+$main-light-color: #FFFFFF;
+$main-dark-color: #333333;
+$main-items-color: #8D86C9;
+$main-border-color: #F7ECE1;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Gilroy;
+    color: $main-dark-color;
+}
+
+
+/* -Block--------------------------------------------------------------------------------------- */
+
+
+.block-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+._container {
+    max-width: 1296px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+._top-bg-image {
+    background-image: url(../images/header/newsbgimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+
+/* Header ------------------------------------------------------------------------------------- */
+
+
+.header {}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 124px;
+}
+
+.header__logo {}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu {}
+
+.menu-item {
+    list-style-type: none;
+    padding: 0 20px;
+
+    a {
+        text-decoration: none;
+
+        font-size: 14px;
+        line-height: 140%;
+        color: $main-light-color;
+    }
+}
+
+.header__icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.header__icon {
+    padding: 0 10px;
+}
+
+
+/* Page ------------------------------------------------------------------------------------- */
+
+.page {
+    flex: 1 1 auto;
+}
+
+.page__main-block {}
+
+.page__news {}
+
+
+/* Main block ------------------------------------------------------------------------------------- */
+
+
+.main-block {}
+
+.main-block__container {}
+
+.main-block__header {
+    h1 {
+        padding: 60px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: $main-light-color;
+    }
+
+    &::before {
+        content: " ";
+        display: block;
+        height: 1px;
+        border-top: 1px solid $main-light-color;
+        opacity: 30%;
+    }
+}
+
+
+.footer {
+    background-color: #F7ECE1;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 96px;
+}
+
+.footer__copyright {
+    opacity: 0.3;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .menu-item a {
+        color: $main-dark-color;
+        font-weight: 500;
+    }
+}
+
+
+.footer__icon {
+    padding: 0 10px;
+}
+
+/* News ------------------------------------------------------------------------------------- */
+
+
+.news {}
+
+.news__container {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.news__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(416px, 1fr));
+    gap: 24px;
+
+}
+
+.news__item {}
+
+.item-news {
+    padding: 30px 40px;
+    border: 1px solid #F7ECE1;
+
+
+    .news__image {
+        max-width: 336px;
+        max-height: 240px;
+    }
+
+    .news__date {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        opacity: 0.5;
+
+        &:nth-child(2) {
+            margin-top: 25px;
+        }
+    }
+
+    .news__text {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 140%;
+
+        margin-top: 15px;
+
+        &:nth-child(2) {
+            margin-top: 25px;
+        }
+    }
+
+    .news__button {
+        text-align: center;
+
+        padding: 10px 20px;
+        background-color: #8D86C9;
+        border: none;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        color: $main-light-color;
+
+        margin-top: 20px;
+
+        &:nth-child(2) {
+            margin-top: 25px;
+        }
+    }
+}

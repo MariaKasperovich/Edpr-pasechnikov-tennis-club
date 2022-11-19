@@ -1,0 +1,326 @@
+@import url(./resetstyles.css);
+@import url(../fonts/stylesheet.css);
+body {
+  font-family: Gilroy;
+  color: #333333;
+}
+
+/* -Block--------------------------------------------------------------------------------------- */
+.block-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1296px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0 15px;
+}
+
+._top-bg-image {
+  background-image: url(../images/main-block/mainimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+/* Header ------------------------------------------------------------------------------------- */
+.header::after {
+  content: " ";
+  display: block;
+  height: 1px;
+  border-top: 1px solid #FFFFFF;
+  opacity: 30%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 124px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  list-style-type: none;
+  padding: 0 20px;
+}
+.menu-item a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.header__icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.header__icon {
+  padding: 0 10px;
+}
+
+/* Page ------------------------------------------------------------------------------------- */
+/* Main block ------------------------------------------------------------------------------------- */
+.main-block__title {
+  margin-top: 200px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.main-block__title:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.main-block__button {
+  display: flex;
+  align-items: center;
+}
+.main-block__button .main-block__button-label {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.main-block__button .main-block__button-label:not(:first-child) {
+  margin-left: 30px;
+}
+
+/* Services ------------------------------------------------------------------------------------- */
+.main-block__services {
+  margin-top: 202px;
+}
+.main-block__services:last-child {
+  margin-bottom: 150px;
+}
+
+.services__body {
+  box-sizing: border-box;
+  margin: -6px -6px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__column {
+  padding: 6px 6px;
+  flex: 0 1 25%;
+}
+@media (max-width: 1114px) {
+  .services__column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 595px) {
+  .services__column {
+    flex: 0 1 100%;
+  }
+}
+
+.services__item {
+  height: 100%;
+  padding: 35px 49px 40px 35px;
+  background-color: #8D86C9;
+}
+
+.item-service__label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.item-service-title-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.item-service-title-icon:not(:first-child) {
+  margin-top: 17px;
+}
+
+.item-service__title {
+  align-self: flex-end;
+  padding-right: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.item-service__icon img {
+  padding-bottom: 6px;
+}
+
+/* Advantages ------------------------------------------------------------------------------------- */
+.advantages__container {
+  margin-top: 150px;
+}
+.advantages__container:last-child {
+  margin-bottom: 150px;
+}
+
+.advantages__body {
+  margin: -10px -10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__column {
+  padding: 10px 10px;
+  flex: 0 1 33.333%;
+}
+.advantages__column:nth-of-type(1) .item-advantages__bg-image-container {
+  background-image: url(../images/advantages/pic1.png);
+}
+.advantages__column:nth-of-type(2) .item-advantages__bg-image-container {
+  background-image: url(../images/advantages/pic2.png);
+}
+.advantages__column:nth-of-type(3) .item-advantages__bg-image-container {
+  background-image: url(../images/advantages/pic3.png);
+}
+@media (max-width: 1114px) {
+  .advantages__column {
+    flex: 1 1 50%;
+  }
+}
+@media (max-width: 595px) {
+  .advantages__column {
+    flex: 1 1 100%;
+  }
+}
+
+.advantages__item {
+  min-width: 290px;
+  box-sizing: border-box;
+  padding: 25px 20px;
+  border: 1px solid #F7ECE1;
+}
+
+.item-advantages__bg-image-container {
+  min-height: 450px;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.item-advantages__text {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* Staff ------------------------------------------------------------------------------------- */
+.staff__container {
+  margin-top: 150px;
+}
+.staff__container:last-child {
+  margin-bottom: 150px;
+}
+
+.staff__header {
+  margin-bottom: 75px;
+}
+
+.staff__body {
+  margin: -10px -10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.staff__column {
+  min-width: 214px;
+  padding: 10px 10px;
+  flex: 0 1 16.666%;
+}
+
+.staff__item {
+  height: 100%;
+}
+
+.item-staff__image {
+  border: 1px solid #F7ECE1;
+  padding: 0 15px;
+}
+.item-staff__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-staff__name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 140%;
+}
+.item-staff__name:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.item-staff__description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+/* Footer ------------------------------------------------------------------------------------- */
+.footer {
+  background-color: #F7ECE1;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 96px;
+}
+
+.footer__copyright {
+  opacity: 0.3;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer__menu .menu-item a {
+  color: #333333;
+  font-weight: 500;
+}
+
+.footer__icon {
+  padding: 0 10px;
+}/*# sourceMappingURL=styles.css.map */
