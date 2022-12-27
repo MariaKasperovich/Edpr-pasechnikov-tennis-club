@@ -201,6 +201,11 @@ body {
     padding: 25px 20px;
     height: 500px;
     border: 1px solid #F7ECE1;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .about__image img {
